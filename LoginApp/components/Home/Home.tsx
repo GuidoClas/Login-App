@@ -29,7 +29,7 @@ const Home = () => {
         style={styles.button}
         onPress={handleSignOut}
       >
-      <Text style={styles.buttonText}>Sign Out</Text>
+      <Text style={styles.buttonText}>Salir</Text>
       </TouchableOpacity>
     </View>
   )

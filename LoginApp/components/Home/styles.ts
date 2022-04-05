@@ -5,29 +5,29 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FEE9E1'
+        backgroundColor: "#e6e6e6"
     },
     titleText: {
-        color: '#3A2F2C',
+        color: '#a0cfcf',
         fontFamily: 'sans-serif-condensed',
         fontWeight: '700',
-        fontSize: 24,
+        fontSize: 48,
         marginBottom: 15
     },
     button: {
-        backgroundColor: '#FAD4C0',
+        backgroundColor: '#a0cfcf',
         width: '60%',
         padding: 15,
         borderRadius: 10,
         alignItems: 'center',
         marginTop: 50,
-        borderColor: 'lightgrey',
+        borderColor: 'white',
         borderWidth: 2
     },
     buttonText: {
         fontWeight: '700',
         fontSize: 16,
-        color: 'black',
+        color: 'white',
     },
     buttonOutline: {
         backgroundColor: 'white',
