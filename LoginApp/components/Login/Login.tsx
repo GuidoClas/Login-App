@@ -70,10 +70,10 @@ const Login : React.FunctionComponent = () => {
         return 'No se encontró un usuario con éste mail';
       }
       case 'auth/wrong-password': {
-        return 'Contraseña inválida';
+        return 'Contraseña incorrecta';
       }
       default: {
-          return 'Contraseña inválida';
+          return 'Contraseña incorrecta';
       }
     }
   };
@@ -81,16 +81,16 @@ const Login : React.FunctionComponent = () => {
   const handleRegisterErrorMessage = (code : String) => {
     switch (code) {
       case 'auth/email-already-in-use': {
-          return 'El email ya está en uso';
+        return 'El email ya está en uso';
       }
       case 'auth/invalid-email': {
-          return 'Email inválido';
+        return 'Email inválido';
       }
       case 'auth/weak-password': {
         return 'Tu contraseña es muy débil';
       }
       default: {
-          return "Contraseña inválida";
+        return "Contraseña inválida";
       }
     }
   };
@@ -100,7 +100,7 @@ const Login : React.FunctionComponent = () => {
       <Text style={styles.titleText}>Ingresá para operar</Text>
 
       {loading && <View style={styles.spinnerContainer}>
-        <ActivityIndicator style={styles.spinner} size="large" color="#3A2F2C" />
+        <ActivityIndicator style={styles.spinner} size={180} color="lightgrey" />
       </View>}
       
       <View style={styles.inputContainer}>
