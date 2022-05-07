@@ -30,11 +30,15 @@ export default function App() {
             options={{
               title: "Juegardos",
               headerStyle: {
-                backgroundColor: "#a0cfcf",
+                
+                backgroundColor: "#EE4266",
               },
+              headerTitleAlign: 'center',
               headerTintColor: "#fff",
               headerTitleStyle: {
-                fontWeight: "bold"
+                fontWeight: "bold",
+                fontFamily: 'monospace',
+                fontSize: 30,
               }
             }}
             name="Login"

@@ -7,12 +7,13 @@ import Constants from 'expo-constants';
 import UserContext from '../../context/context';
 import { app } from '../../firebase';
 
-export default function Scanner() {
+export default function Scanner({ navigation }) {
   const isFocused = useIsFocused();
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const { user } = useContext(UserContext);
-  
+
+
   useEffect(() => {
     (async () => {
       const { status } = await BarCodeScanner.requestPermissionsAsync();
@@ -40,6 +41,10 @@ export default function Scanner() {
       break;
     }
     validateBarCode(qrNumber);
+    setTimeout(() => {
+      navigation.navigate('Créditos');
+      setScanned(false);
+    }, 1000);
   };
 
   const validateBarCode = (qrNumber) => {
@@ -130,6 +135,7 @@ export default function Scanner() {
         text2: 'No podes acumular más de éste crédito'
       });
     }
+    navigator.navigate
   };
 
   const updateCreditScore = () => {

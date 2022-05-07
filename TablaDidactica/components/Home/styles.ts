@@ -5,32 +5,65 @@ const windowHeight = Dimensions.get('screen').height;
 const windowWidth = Dimensions.get('screen').width;
 
 export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    botButtons:{
+        alignItems: 'center',
+        height: windowHeight*0.95,
+        width: windowWidth,
+        backgroundColor:  "#FFCB1F",
+        fontFamily: "Gill Sans Extrabold",
+        borderBottomWidth: 2,
+    },
+    botFAB: {
+        paddingTop: '13%',
+        backgroundColor: '#EE4266',
+        borderColor: 'black',
+        borderWidth: 3
+    },
     image: {
         width: 50,
         height: 50,
-        backgroundColor: 'red'
+        bottom: 10
     },
-    container: {
-        flex: 1,
-        //backgroundColor: '#a3dbdb',
-        backgroundColor: 'red',
+    divItems: {
+        width: Dimensions.get('screen').width, 
+        backgroundColor: 'lightgrey',
+        zIndex: -99 
     },
-    divAudios:{
-        width: windowWidth,
-        height: windowHeight*0.85,
-       // backgroundColor: '#349281'
-       backgroundColor: 'green'
-    },
-    botButtons:{
-        flex: 1,
+    items: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        height: windowHeight * 0.10,
+        height: windowHeight*0.165, 
         width: windowWidth,
-        backgroundColor:  "orange",
-        fontFamily: "Gill Sans Extrabold",
-        borderTopColor: "black",
-        borderTopWidth: 2,
+        borderWidth: 2,
+        borderColor: 'black' 
     },
+    imageBG: {
+        height: windowHeight*0.165,
+        width: windowWidth*0.4,
+    },
+    imageBGColors: {
+        height: windowHeight*0.165,
+        width: windowWidth*1,
+    },
+    pressable: {
+        width: windowWidth,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderWidth: 2,
+        borderColor: 'black'
+    },
+    actionButtonImage: {
+        fontSize: 20,
+        height: 35,
+        width: 35,
+        color: 'black',
+    },
+    actionButtonIcon: {
+        color: 'white',
+        fontSize: 20,
+        height: 30,
+    }
 });

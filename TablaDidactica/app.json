@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "LoginApp",
-    "slug": "LoginApp",
+    "name": "Juegardos",
+    "slug": "Juegardos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,8 +15,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.GuidoClas.Juegardos",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },

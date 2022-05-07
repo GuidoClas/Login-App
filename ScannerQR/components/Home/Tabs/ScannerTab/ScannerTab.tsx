@@ -1,12 +1,12 @@
 import { StyleSheet, View } from "react-native";
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 import Scanner from "../../../Scanner/Scanner";
 
-export default function ScannerTab() {
+export default function ScannerTab({ navigation } : any) {
 
   return (
     <View>
-        <Scanner></Scanner>
+        <Scanner navigation={navigation} ></Scanner>
     </View>
   );
 }

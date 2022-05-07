@@ -51,22 +51,23 @@ export default function CreditTab() {
           <Text style={styles.title}>Rol:</Text>
           <Text style={styles.text}>{user.role}</Text>
         </View>
-        <View style={styles.item}>
-          <Text style={styles.title}>Créditos:</Text>
-          <Text style={styles.text}>{user.creditScore}</Text>
-        </View>
+      </View>
+      <View style={styles.credit}>
+        <Text style={styles.titleCredit}>Créditos:</Text>
+        <Text style={styles.textCredit}>{user.creditScore}</Text>
       </View>
 
       <View style={styles.icon}>
         <Icon.Button
+          style={{ borderWidth: 4, borderColor: 'red' }}
           size={55}
-          borderRadius={50}
+          borderRadius={30}
           name="trash-restore"
           backgroundColor="#d3e6e7"
           onPress={handleResetCredits}
-          color='#e09e31'
+          color='red'
         >
-          <Text style={{ fontSize: 18, color: 'black' }}>
+          <Text style={{ fontSize: 26, color: 'black' }}>
             Reestablecer Créditos
           </Text>
         </Icon.Button>
@@ -79,15 +80,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
     width: Dimensions.get('screen').width,
     height: Dimensions.get('screen').height*0.8,    
   },
   flatlist: {
-    height: Dimensions.get('screen').height * 0.5
+    width: Dimensions.get('screen').width * 0.8,
+    height: Dimensions.get('screen').height * 0.25
   },
   item: {
     backgroundColor: '#d3e6e7',
-    padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
     borderRadius: 50,
@@ -99,13 +101,37 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: 'white'
   },
+  credit: {
+    alignItems: 'center',
+    backgroundColor: '#d3e6e7',
+    height: Dimensions.get('screen').height * 0.35,
+    width: Dimensions.get('screen').width * 1,
+    borderWidth: 3,
+    borderColor: '#e09e31',
+    borderRadius: 30
+  },
+  titleCredit: {
+    textAlign: 'center',
+    fontSize: 56,
+    color: 'white'
+  },
+  textCredit: {
+    justifyContent: 'center',
+    textAlign: 'center',
+    top: 30,
+    fontSize: 100,
+    color: '#e09e31'
+  },
   text: {
     textAlign: 'center',
     fontSize: 26,
     color: '#e09e31'
   },
   icon: {
-    marginTop: 70
+    height: Dimensions.get('screen').height * 0.15,
+    width: Dimensions.get('screen').width * 0.9,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   spinnerContainer: {
     position: 'absolute',

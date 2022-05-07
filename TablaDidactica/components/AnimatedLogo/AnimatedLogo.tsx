@@ -32,24 +32,24 @@ export default function AnimatedLogo() {
       </View>
 
       <View style={{ position: 'absolute', top: -280 }}>
-        <Text style={{ fontSize: 20 }}>Guido Clas</Text>
+        <Text style={{ fontFamily: 'monospace', textAlign: 'center', color: '#FFCB1F', fontSize: 26 }}>Guido Clas</Text>
       </View>
 
-      <View style={{ position: 'absolute', top: -180 }}>
-        <Text style={{ fontSize: 30, fontFamily: 'Roboto', fontWeight: 'bold' }}>Juegardos</Text>
+      <View style={{ width: 400 ,position: 'absolute', top: -180 }}>
+        <Text style={{ textAlign: 'center', color: '#FFCB1F', fontSize: 48, fontFamily: 'monospace', fontWeight: 'bold' }}>Juegardos</Text>
       </View>
 
       {showSpinner && (
         <View style={{ position: "relative", marginTop: 45 }}>
           <Image
-            style={{ width: 250, height: 250 }}
+            style={{ width: 350, height: 350 }}
             source={require("../../assets/gifplay.gif")}
           ></Image>
         </View>
       )}
 
       <View style={{ position: 'absolute', bottom: -200 }}>
-        <Text style={{ fontSize: 20 }}>4B</Text>
+        <Text style={{ fontFamily: 'monospace', textAlign: 'center', color: '#FFCB1F', fontSize: 32 }}>4B</Text>
       </View>
 
     </View>

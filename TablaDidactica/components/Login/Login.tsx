@@ -7,7 +7,7 @@ import {
   Image,
   ActivityIndicator
 } from "react-native";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { styles } from "./styles";
 import { auth } from "../../firebase";
 import { useNavigation } from "@react-navigation/core";
@@ -136,7 +136,7 @@ const Login : React.FunctionComponent = () => {
       </View>}
       
       <View style={styles.inputContainer}>
-        <Text style={styles.titleText}>Ingresá para operar</Text>
+        <Text style={styles.titleText}>Ingresá para jugar!</Text>
         <TextInput 
             placeholder="Email" 
             style={styles.input}
@@ -153,7 +153,7 @@ const Login : React.FunctionComponent = () => {
         {error && <Text style={styles.error}>{errorMessage}</Text>}
         {successAtRegister && <Text style={styles.success}>Se registró exitosamente!</Text>}
           <Image
-            style={{ width: 100, height: 100 }}
+            style={{ width: 200, height: 200 }}
             source={require("../../assets/gifplay.gif")}
           ></Image>
       </View>

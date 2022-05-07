@@ -5,11 +5,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: "#d3e6e7"
+        backgroundColor: "lightgrey"
     },
     titleText: {
-        color: 'white',
-        fontFamily: 'sans-serif',
+        color: 'black',
+        fontFamily: 'monospace',
         fontWeight: '600',
         fontSize: 28,
         textShadowRadius: 2,
@@ -20,11 +20,12 @@ export const styles = StyleSheet.create({
         paddingTop: 20,
         width: Dimensions.get('window').width*0.9,
         height: Dimensions.get('window').height*0.65,
-        backgroundColor: '#d3e6e7',
+        backgroundColor: 'lightgrey',
         alignItems: 'center',
         justifyContent: 'center',
     },
     input: {
+        fontFamily: 'monospace',
         width: Dimensions.get('window').width*0.9,
         backgroundColor: 'white',
         paddingHorizontal: 15,
@@ -41,10 +42,12 @@ export const styles = StyleSheet.create({
         paddingBottom: 50,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#d3e6e7'
+        backgroundColor: '#EE4266',
+        borderWidth: 3,
+        borderColor: 'grey'
     },
     button: {
-        backgroundColor: "#a0cfcf",
+        backgroundColor: "#FFCB1F",
         width: '100%',
         padding: 15,
         borderRadius: 10,
@@ -53,6 +56,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonText: {
+        fontFamily: 'monospace',
         color: 'white',
         fontWeight: '700',
         fontSize: 16,
@@ -61,11 +65,11 @@ export const styles = StyleSheet.create({
     buttonOutline: {
         backgroundColor: 'white',
         marginTop: 5,
-        borderColor: '#a0cfcf',
+        borderColor: '#FFCB1F',
         borderWidth: 2
     },
     buttonOutlineText: {
-        color: '#a0cfcf',
+        color: '#EE4266',
         fontWeight: '700',
         fontSize: 16
     },
@@ -106,7 +110,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#d3e6e7'
     },
     buttonAux: {
-        backgroundColor: "lightgrey",
+        backgroundColor: "#EE4266",
         width: Dimensions.get('window').width / 3,
         height: Dimensions.get('window').height*0.1,
         borderWidth: 1,
