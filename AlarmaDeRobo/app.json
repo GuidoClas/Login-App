@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Relevamiento Visual",
-    "slug": "relevamiento-visual",
+    "name": "AlarmED",
+    "slug": "alarmed",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +15,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.GuidoClas.RelevamientoVisual",
+      "package": "com.GuidoClas.AlarmED",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
