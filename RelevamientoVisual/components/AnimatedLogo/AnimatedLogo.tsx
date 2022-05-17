@@ -24,8 +24,8 @@ export default function AnimatedLogo() {
         }}
       >
         <ImageBackground
-          style={{ width: Dimensions.get('screen').width, height: Dimensions.get('screen').height }}
-          source={require("../../assets/SplashS.jpg")}
+          style={{ width: Dimensions.get('screen').width*2, height: Dimensions.get('screen').height }}
+          source={require("../../assets/PrevSplash.png")}
           resizeMode='stretch'
         ></ImageBackground>
 

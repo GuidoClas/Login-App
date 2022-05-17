@@ -6,7 +6,7 @@ import {
   TouchableOpacity,
   Dimensions,
 } from "react-native";
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { updateVotes } from "../../services/FirestoreService";
 import Constants from 'expo-constants'
 import UserContext from "../../context/context";
@@ -16,9 +16,11 @@ let windowHeight = Dimensions.get('screen').height;
 let windowWidth = Dimensions.get('screen').width;
 
 export default function PicCard(props: any) {
+  const dayjs = require("dayjs");
+
   const { email } = useContext(UserContext);
   const [voted, setVoted] = useState(props.votos.includes(email));
-  const fecha = props.fecha.split(' ')[0] + ' ' + props.fecha.split(' ')[1] + ' ' + props.fecha.split(' ')[3];
+  const fecha = dayjs(props.fecha).format('DD/MM/YYYY');
 
   const onVote = () => {
     if(!voted){

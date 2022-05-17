@@ -24,7 +24,7 @@ export default function AnimatedLogo() {
         }}
       >
         <ImageBackground
-          style={{ width: Dimensions.get('screen').width, height: Dimensions.get('screen').height }}
+          style={{ width: Dimensions.get('screen').width*2, height: Dimensions.get('screen').height }}
           source={require("../../assets/SplashS.jpg")}
           resizeMode='stretch'
         ></ImageBackground>
@@ -32,11 +32,11 @@ export default function AnimatedLogo() {
       </View>
 
       <View style={{ position: 'absolute', top: -280 }}>
-        <Text style={{ fontSize: 26 }}>Guido Clas</Text>
+        <Text style={{ fontSize: 26, color: '#ffffff' }}>Guido Clas</Text>
       </View>
 
-      <View style={{ position: 'absolute', top: -180 }}>
-        <Text style={{ fontSize: 50, fontFamily: 'Roboto', fontWeight: 'bold' }}>ScanMe</Text>
+      <View style={{ position: 'absolute', top: -180, width: 320 }}>
+        <Text style={{ fontSize: 50, fontFamily: 'Roboto', fontWeight: 'bold', color: '#ffffff', textAlign: 'center' }}>Escaneame</Text>
       </View>
 
       {showSpinner && (
@@ -49,7 +49,7 @@ export default function AnimatedLogo() {
       )}
 
       <View style={{ position: 'absolute', bottom: -200 }}>
-        <Text style={{ fontSize: 26 }}>4B</Text>
+        <Text style={{ fontSize: 26, color: '#ffffff' }}>4B</Text>
       </View>
 
     </View>

@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/PrevSplash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#7ec18c"
+    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },

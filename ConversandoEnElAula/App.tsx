@@ -50,7 +50,7 @@ export default function App() {
           <Stack.Navigator>
             <Stack.Screen
               options={{
-                title: "Chattin'",
+                title: "Chateando",
                 headerStyle: {
                   backgroundColor: "white",
                 },

@@ -30,7 +30,7 @@ export const getAllByUser = async (collection, email, type, onResult, onError) =
 };
 
 export const getAll = async (collection, type, onResult, onError) => {
-  return await firestore.collection(collection).where("tipo", "==", type).onSnapshot(onResult, onError);
+  return await firestore.collection(collection).where("tipo", "==", type).orderBy('fecha', 'desc').onSnapshot(onResult, onError);
 };
 
 export const updateVotes = async (collection, doc, email, prevVotes) => {

@@ -33,7 +33,7 @@ export default function App() {
           <Stack.Navigator>
             <Stack.Screen
               options={{
-                title: "ScanMe",
+                title: "Escaneame",
                 headerStyle: {
                   backgroundColor: "#e09e31",
                 },

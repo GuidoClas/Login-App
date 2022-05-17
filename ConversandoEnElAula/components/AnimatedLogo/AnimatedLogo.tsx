@@ -25,7 +25,7 @@ export default function AnimatedLogo() {
       >
         <ImageBackground
           style={{ width: Dimensions.get('screen').width, height: Dimensions.get('screen').height }}
-          source={require("../../assets/SplashS.jpg")}
+          source={require("../../assets/PrevSplash.png")}
           resizeMode='stretch'
         ></ImageBackground>
 
@@ -35,8 +35,8 @@ export default function AnimatedLogo() {
         <Text style={{ fontSize: 26, fontFamily: 'Inter_900Black' }}>Guido Clas</Text>
       </View>
 
-      <View style={{ position: 'absolute', top: -180 }}>
-        <Text style={{ fontSize: 50, fontFamily: 'Inter_900Black', fontWeight: 'bold' }}>Chattin'</Text>
+      <View style={{ position: 'absolute', top: -180, width: 300, }}>
+        <Text style={{  textAlign: 'center',fontSize: 50, fontFamily: 'Inter_900Black', fontWeight: 'bold' }}>Chateando</Text>
       </View>
 
       {showSpinner && (
